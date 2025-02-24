@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Lucas Carvalho</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Lucas Dev</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button id="theme-toggle" class="theme-toggle"><i class="fas fa-adjust"></i></button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" alt="Avatar do desenvolvedor" class="profile-img">
+            <h1>Lucas</h1>
+            <p><strong>Engenheiro de Software - Desenvolvedor Full Stack</strong></p>
+            <h2>Microsoft</h2>
+            <div class="social-links">
+                <a href="https://github.com/seu-usuario"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/seu-usuario"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-content">
+            <div class="texto-sobre">
+                <p>Olá! Sou um desenvolvedor front-end iniciante apaixonado por criar interfaces intuitivas e responsivas. Atualmente estou focado em aprender e aprimorar minhas habilidades em HTML, CSS, JavaScript e Python.</p>
+                <div class="skills">
+                    <h3>Minhas Habilidades:</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <img src="C:\Users\Dklucasmc\Documents\portifolio\canaisls4.PNG" alt="Landing Page">
+                <h3>Site para assistir canais ao vivo</h3>
+                <p>Site para assistir canais esportivos ao vivo multiplataforma</p>
+                <a href="https://a7dymd3dol2posbk.vercel.app/" class="btn">Ver Projeto</a>
+            </div>
+            <div class="projeto-card">
+                <img src="C:\Users\Dklucasmc\Documents\portifolio\lsbooks.PNG" alt="Aplicação Web">
+                <h3>Aplicação Web com React</h3>
+                <p>Aplicação web com JavaScript LS BOOKS</p>
+                <a href="https://ls-books.netlify.app" class="btn">Ver Projeto</a>
+            </div>
+            <div class="projeto-card">
+                <img src="C:\Users\Dklucasmc\Documents\portifolio\calculadora_quadratica.PNG" alt="Site Institucional">
+                <h3>Aplicação Web com Python</h3>
+                <p>Site para calcular equações e funções</p>
+                <a href="https://calculadoraquadratica.netlify.app" class="btn">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="contato-container">
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lucas - Desenvolvedor Front-end</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

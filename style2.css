@@ -1,0 +1,296 @@
+
+Copy* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f4f4f9; /* Fundo claro */
+}
+
+body.dark-mode {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #ffffff;
+}
+
+header {
+    background-color: #3a86ff; /* Azul vibrante */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efeito de destaque suave */
+}
+
+.menu-btn {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3a86ff, #83c5ff); /* Gradiente azul claro */
+    padding-top: 60px;
+}
+
+.hero {
+    text-align: center;
+    color: white;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para o avatar */
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+#sobre {
+    padding: 5rem 2rem;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #sobre {
+    background-color: #2a2a2a; /* Fundo escuro para a seção "Sobre" */
+}
+
+.sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills li {
+    background-color: #3a86ff; /* Azul vibrante para as habilidades */
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.skills li:hover {
+    transform: translateY(-2px); /* Efeito de movimento ao passar o mouse */
+}
+
+#projetos {
+    padding: 5rem 2rem;
+}
+
+body.dark-mode #projetos {
+    background-color: #2a2a2a; /* Fundo escuro para a seção "Projetos" */
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .projeto-card {
+    background-color: #3a3a3a; /* Fundo escuro para os cartões de projeto */
+    color: white;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-card h3,
+.projeto-card p {
+    padding: 1rem;
+}
+
+#contato {
+    padding: 5rem 2rem;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #contato {
+    background-color: #2a2a2a; /* Fundo escuro para a seção "Contato" */
+}
+
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input,
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3a86ff; /* Cor de destaque ao focar */
+}
+
+textarea {
+    height: 150px;
+}
+
+.btn {
+    background-color: #3a86ff; /* Azul vibrante */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #357ABD; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de movimento ao passar o mouse */
+}
+
+footer {
+    background-color: #3a86ff; /* Azul vibrante */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Fundo escuro para o rodapé */
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #3a86ff; /* Azul vibrante */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills ul {
+        justify-content: center;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #342ab8; /* Azul vibrante para títulos */
+}
