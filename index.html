@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Metadados básicos para configuração da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Lucas Carvalho</title>
+    <!-- Folhas de estilo CSS e recursos externos -->
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg">
 </head>
 <body>
+    <!-- Cabeçalho fixo com navegação -->
     <header>
         <nav>
             <div class="logo">Lucas Dev</div>
+            <!-- Links de navegação principal -->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <!-- Botão de menu para dispositivos móveis -->
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
+            <!-- Botão para alternar entre tema claro/escuro -->
             <button id="theme-toggle" class="theme-toggle"><i class="fas fa-adjust"></i></button>
         </nav>
     </header>
 
+    <!-- Seção de apresentação inicial -->
     <section id="home">
         <div class="hero">
+            <!-- Imagem de perfil com avatar -->
             <img src="https://img.freepik.com/vetores-premium/perfil-de-avatar-de-homem-no-icone-redondo_24640-14044.jpg" alt="Avatar do desenvolvedor" class="profile-img">
             <h1>Lucas</h1>
             <p><strong>Engenheiro de Software - Desenvolvedor Full Stack</strong></p>
             <h2>Microsoft</h2>
+            <!-- Links para redes sociais profissionais -->
             <div class="social-links">
                 <a href="https://github.com/lucascarvalho1808"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/lucas-carvalho-27369b350"><i class="fab fa-linkedin"></i></a>
@@ -38,11 +47,13 @@
         </div>
     </section>
 
+    <!-- Seção com informações pessoais e habilidades -->
     <section id="sobre">
         <h2>Sobre Mim</h2>
         <div class="sobre-content">
             <div class="texto-sobre">
                 <p>Olá! Sou um desenvolvedor front-end iniciante apaixonado por criar interfaces intuitivas e responsivas. Atualmente estou focado em aprender e aprimorar minhas habilidades em HTML, CSS, JavaScript e Python.</p>
+                <!-- Lista de habilidades técnicas -->
                 <div class="skills">
                     <h3>Minhas Habilidades:</h3>
                     <ul>
@@ -56,21 +67,25 @@
         </div>
     </section>
 
+    <!-- Seção de portfólio com projetos -->
     <section id="projetos">
         <h2>Meus Projetos</h2>
         <div class="projetos-grid">
+            <!-- Card de projeto 1 -->
             <div class="projeto-card">
                 <img src="canaisls4.PNG" alt="Landing Page">
                 <h3>Site para assistir canais ao vivo</h3>
                 <p>Site para assistir canais esportivos ao vivo multiplataforma</p>
                 <a href="https://a7dymd3dol2posbk.vercel.app/" class="btn">Ver Projeto</a>
             </div>
+            <!-- Card de projeto 2 -->
             <div class="projeto-card">
                 <img src="lsbooks.PNG" alt="Aplicação Web">
                 <h3>Aplicação Web com React</h3>
                 <p>Aplicação web com JavaScript LS BOOKS</p>
                 <a href="https://ls-books.netlify.app" class="btn">Ver Projeto</a>
             </div>
+            <!-- Card de projeto 3 -->
             <div class="projeto-card">
                 <img src="calculadora_quadratica.PNG" alt="Site Institucional">
                 <h3>Aplicação Web com Python</h3>
@@ -80,9 +95,11 @@
         </div>
     </section>
 
+    <!-- Seção de formulário de contato -->
     <section id="contato">
         <h2>Contato</h2>
         <div class="contato-container">
+            <!-- Formulário para envio de mensagem -->
             <form>
                 <input type="text" placeholder="Nome" required>
                 <input type="email" placeholder="Email" required>
@@ -92,10 +109,12 @@
         </div>
     </section>
 
+    <!-- Rodapé com informações de copyright -->
     <footer>
         <p>&copy; 2025 Lucas - Desenvolvedor Front-end</p>
     </footer>
 
+    <!-- Script JavaScript para alternar tema claro/escuro -->
     <script>
         const themeToggle = document.getElementById('theme-toggle');
         themeToggle.addEventListener('click', () => {

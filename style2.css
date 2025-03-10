@@ -1,33 +1,37 @@
-
-Copy* {
+/* Reset CSS - Remove margens e paddings padrão de todos os elementos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos base para o corpo da página */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    transition: background-color 0.3s, color 0.3s;
-    background-color: #f4f4f9; /* Fundo claro */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para mudança de tema */
+    background-color: #f4f4f9; /* Fundo claro padrão */
 }
 
+/* Estilização para o modo escuro ativado */
 body.dark-mode {
     background-color: #1e1e1e; /* Fundo escuro */
-    color: #ffffff;
+    color: #ffffff; /* Texto branco para melhor contraste */
 }
 
+/* Cabeçalho fixo no topo da página */
 header {
     background-color: #3a86ff; /* Azul vibrante */
     padding: 1rem;
-    position: fixed;
+    position: fixed; /* Mantém o cabeçalho sempre visível */
     width: 100%;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
+/* Estrutura da barra de navegação */
 nav {
     display: flex;
     justify-content: space-between;
@@ -36,29 +40,34 @@ nav {
     margin: 0 auto;
 }
 
+/* Estilo do logotipo */
 .logo {
     color: white;
     font-size: 1.8rem;
     font-weight: bold;
 }
 
+/* Menu de navegação horizontal */
 .nav-links {
     display: flex;
     list-style: none;
 }
 
+/* Estilo dos links do menu */
 .nav-links li a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
     border-radius: 5px;
 }
 
+/* Efeito ao passar o mouse sobre links */
 .nav-links li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Efeito de destaque suave */
 }
 
+/* Botão do menu hamburger (inicialmente oculto) */
 .menu-btn {
     display: none;
     color: white;
@@ -66,6 +75,7 @@ nav {
     cursor: pointer;
 }
 
+/* Botão para alternar entre temas claro/escuro */
 .theme-toggle {
     background: none;
     border: none;
@@ -74,159 +84,186 @@ nav {
     cursor: pointer;
 }
 
+/* Seção inicial com altura total da tela */
 #home {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #3a86ff, #83c5ff); /* Gradiente azul claro */
-    padding-top: 60px;
+    background: linear-gradient(135deg, #3a86ff, #83c5ff); /* Gradiente azul */
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
 }
 
+/* Conteúdo centralizado da seção inicial */
 .hero {
     text-align: center;
     color: white;
 }
 
+/* Imagem de perfil circular */
 .profile-img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 50%; /* Formato circular */
     margin-bottom: 1rem;
     border: 5px solid white;
-    object-fit: cover;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para o avatar */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
 
+/* Ícones de redes sociais */
 .social-links a {
     color: white;
     font-size: 1.5rem;
     margin: 0 0.5rem;
-    transition: color 0.3s;
+    transition: color 0.3s; /* Transição suave */
 }
 
+/* Efeito ao passar o mouse sobre ícones sociais */
 .social-links a:hover {
-    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+    color: #ffcc00; /* Cor de destaque amarela */
 }
 
+/* Seção Sobre com fundo contrastante */
 #sobre {
     padding: 5rem 2rem;
-    background-color: #ffffff; /* Fundo branco para contraste */
+    background-color: #ffffff; /* Fundo branco */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajuste da seção Sobre para modo escuro */
 body.dark-mode #sobre {
-    background-color: #2a2a2a; /* Fundo escuro para a seção "Sobre" */
+    background-color: #2a2a2a; /* Fundo escuro apropriado */
 }
 
+/* Limitação de largura para o conteúdo */
 .sobre-content {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Layout flexível para as habilidades */
 .skills ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite quebra de linha */
     list-style: none;
     margin-top: 1rem;
 }
 
+/* Estilo individual para cada habilidade */
 .skills li {
-    background-color: #3a86ff; /* Azul vibrante para as habilidades */
+    background-color: #3a86ff; /* Azul vibrante */
     color: white;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
-    border-radius: 20px;
-    transition: transform 0.3s;
+    border-radius: 20px; /* Formato arredondado */
+    transition: transform 0.3s; /* Transição para efeito de hover */
 }
 
+/* Efeito de elevação ao passar o mouse */
 .skills li:hover {
-    transform: translateY(-2px); /* Efeito de movimento ao passar o mouse */
+    transform: translateY(-2px); /* Move ligeiramente para cima */
 }
 
+/* Seção de projetos */
 #projetos {
     padding: 5rem 2rem;
 }
 
+/* Ajuste da seção de projetos para modo escuro */
 body.dark-mode #projetos {
-    background-color: #2a2a2a; /* Fundo escuro para a seção "Projetos" */
+    background-color: #2a2a2a; /* Fundo escuro apropriado */
 }
 
+/* Layout em grid para os projetos */
 .projetos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas responsivas */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Card individual de projeto */
 .projeto-card {
     background-color: #ffffff; /* Fundo branco */
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* Impede que imagens vazem */
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
 }
 
+/* Ajuste dos cards para modo escuro */
 body.dark-mode .projeto-card {
-    background-color: #3a3a3a; /* Fundo escuro para os cartões de projeto */
+    background-color: #3a3a3a; /* Fundo escuro */
     color: white;
 }
 
+/* Efeito ao passar o mouse sobre cards */
 .projeto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
 }
 
+/* Imagens dos projetos */
 .projeto-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Mantém proporção da imagem */
 }
 
+/* Espaçamento para texto nos cards */
 .projeto-card h3,
 .projeto-card p {
     padding: 1rem;
 }
 
+/* Seção de contato */
 #contato {
     padding: 5rem 2rem;
-    background-color: #ffffff; /* Fundo branco para contraste */
+    background-color: #ffffff; /* Fundo branco */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Ajuste da seção de contato para modo escuro */
 body.dark-mode #contato {
-    background-color: #2a2a2a; /* Fundo escuro para a seção "Contato" */
+    background-color: #2a2a2a; /* Fundo escuro apropriado */
 }
 
+/* Largura limitada para o formulário */
 .contato-container {
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Layout do formulário em coluna */
 form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+/* Estilo dos campos de entrada */
 input,
 textarea {
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s; /* Transição para estado de foco */
 }
 
+/* Destaque visual para campos com foco */
 input:focus,
 textarea:focus {
-    border-color: #3a86ff; /* Cor de destaque ao focar */
+    border-color: #3a86ff; /* Borda azul quando em foco */
 }
 
+/* Altura fixa para a área de texto */
 textarea {
     height: 150px;
 }
 
+/* Estilo padrão para botões */
 .btn {
     background-color: #3a86ff; /* Azul vibrante */
     color: white;
@@ -236,14 +273,16 @@ textarea {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
 }
 
+/* Efeito ao passar o mouse sobre botões */
 .btn:hover {
-    background-color: #357ABD; /* Azul mais escuro ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de movimento ao passar o mouse */
+    background-color: #357ABD; /* Azul mais escuro */
+    transform: translateY(-2px); /* Elevação sutil */
 }
 
+/* Rodapé da página */
 footer {
     background-color: #3a86ff; /* Azul vibrante */
     color: white;
@@ -251,15 +290,19 @@ footer {
     padding: 1rem;
 }
 
+/* Ajuste do rodapé para modo escuro */
 body.dark-mode footer {
-    background-color: #1e1e1e; /* Fundo escuro para o rodapé */
+    background-color: #1e1e1e; /* Fundo escuro */
 }
 
+/* Adaptações para telas menores (responsividade) */
 @media (max-width: 768px) {
+    /* Ativa o botão de menu em telas pequenas */
     .menu-btn {
         display: block;
     }
 
+    /* Esconde os links de navegação em telas pequenas */
     .nav-links {
         display: none;
         width: 100%;
@@ -271,26 +314,31 @@ body.dark-mode footer {
         text-align: center;
     }
 
+    /* Exibe o menu quando a classe .active é adicionada via JavaScript */
     .nav-links.active {
         display: flex;
     }
 
+    /* Ajusta espaçamento dos itens de menu */
     .nav-links li {
         margin: 1rem 0;
     }
 
+    /* Reorganiza o conteúdo da seção Sobre */
     .sobre-content {
         flex-direction: column;
         text-align: center;
     }
 
+    /* Centraliza as habilidades */
     .skills ul {
         justify-content: center;
     }
 }
 
+/* Estilo para títulos de seção */
 h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: #342ab8; /* Azul vibrante para títulos */
+    color: #342ab8; /* Azul vibrante para destaque */
 }
