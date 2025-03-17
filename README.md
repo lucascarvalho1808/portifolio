@@ -75,12 +75,31 @@ O portfólio é composto por duas páginas principais:
 
 ---
 
+### ▶️ Como Executar o Projeto
 
+```bash
+# Clone este repositório
+git clone https://github.com/seu-usuario/portfolio
+
+# Navegue até o diretório do projeto
+cd portfolio
+
+# Abra o arquivo index.html em seu navegador
+# Linux
+xdg-open index.html
+
+# macOS
+open index.html
+
+# Windows
+start index.html
+
+```
 
 📝 Observações
 ⚠️ Este projeto é um exercício acadêmico e não representa um portfólio real. Os links para os projetos e redes sociais são fictícios e foram incluídos apenas para fins de demonstração. As tecnologias mencionadas nas descrições dos projetos representam habilidades que estão sendo desenvolvidas durante o curso.
 
-```markdown
+
 ---
 
 # 🚀 Personal Portfolio - Lucas Carvalho
@@ -177,6 +196,9 @@ open index.html
 
 # Windows
 start index.html
+
+```
+
 📝 Notes
 ⚠️ This project is an academic exercise and does not represent a real portfolio. The links to projects and social networks are fictional and have been included for demonstration purposes only. The technologies mentioned in the project descriptions represent skills that are being developed during the course.
 
