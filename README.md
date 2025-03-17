@@ -70,8 +70,8 @@ O portfólio é composto por duas páginas principais:
 
 3. **🧮 Calculadora de Equações**
    * Ferramenta para cálculos matemáticos
-   * Desenvolvida com Python (backend)
-   * Frontend feito por IA
+   * Desenvolvida com Python (back end)
+   * Front end feito por IA
 
 ---
 
@@ -174,8 +174,8 @@ The portfolio consists of two main pages:
 
 3. **🧮 Equation Calculator**
    * Mathematical calculation tool
-   * Developed with Python
-
+   * Developed with Python (back end)
+   * Front end by AI
 ---
 
 ### ▶️ How to Run the Project
@@ -201,5 +201,7 @@ start index.html
 
 📝 Notes
 ⚠️ This project is an academic exercise and does not represent a real portfolio. The links to projects and social networks are fictional and have been included for demonstration purposes only. The technologies mentioned in the project descriptions represent skills that are being developed during the course.
+
+
 
 
