@@ -100,7 +100,7 @@ start index.html
 Este projeto está licenciado sob a [Licença MIT](LICENSE) - veja o arquivo LICENSE para detalhes.
 
 >📝 **Observações**
-⚠️ Este projeto é um exercício acadêmico e não representa um portfólio real. Os links para os projetos e redes sociais são fictícios e foram incluídos apenas para fins de demonstração. As tecnologias mencionadas nas descrições dos projetos representam habilidades que estão sendo desenvolvidas durante o curso.
+⚠️ Este projeto é um exercício acadêmico e não representa um portfólio real. Os links para os projetos e redes sociais foram incluídos apenas para fins de demonstração. As tecnologias mencionadas nas descrições dos projetos representam habilidades que estão sendo desenvolvidas durante o curso.
 
 
 ---
@@ -206,7 +206,7 @@ start index.html
 This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
 >📝 **Notes**
-⚠️ This project is an academic exercise and does not represent a real portfolio. The links to projects and social networks are fictional and have been included for demonstration purposes only. The technologies mentioned in the project descriptions represent skills that are being developed during the course.
+⚠️ This project is an academic exercise and does not represent a real portfolio. The links to projects and social networks have been included for demonstration purposes only. The technologies mentioned in the project descriptions represent skills that are being developed during the course.
 
 
 
