@@ -79,7 +79,7 @@ O portfólio é composto por duas páginas principais:
 
 ```bash
 # Clone este repositório
-git clone https://github.com/seu-usuario/portfolio
+git clone https://github.com/lucascarvalho1808/portfolio
 
 # Navegue até o diretório do projeto
 cd portfolio
@@ -182,7 +182,7 @@ The portfolio consists of two main pages:
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/portfolio
+git clone https://github.com/lucascarvalho1808/portfolio
 
 # Navigate to the project directory
 cd portfolio
